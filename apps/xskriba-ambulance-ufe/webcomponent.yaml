@@ -8,9 +8,14 @@ spec:
   navigation:
     # aplication context element
     - element: xskriba-ambulance-wl-app
+      attributes:
+        - name: api-base
+          value: http://localhost:3100/api
+        - name: ambulance-id
+          value: bobulova
       path: xskriba-ambulance-wl
       title: Zoznam čakajúcich xskriba
       details: Spravuje zoznam pacientov čakajúcich na vyšetrenie v ambulancii
   preload: false
   proxy: true
-  hash-suffix: v1alpha1
+  hash-suffix: v1alpha2
